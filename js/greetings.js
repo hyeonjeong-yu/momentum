@@ -38,11 +38,6 @@ function paintGreetings(username) {
     greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
-
-// *
-// **
-// local storage 유저정보 유무 확인
-// local storage에 usernm이 있다면 바로 h1 출력, 없다면 form view
 const savedUsername = localStorage.getItem(USERNAME_KEY);
 console.log(savedUsername);
 
@@ -54,6 +49,3 @@ if(savedUsername === null) {
     // show the greetings
     paintGreetings(savedUsername);
 }
-
-//user id value 저장
-//API local storage
